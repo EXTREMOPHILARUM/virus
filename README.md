@@ -91,10 +91,4 @@ Lets make it even more cooler
   ]
 }
 ```
-
-<details>
-  <summary>Click here if you dont want to work hard</summary>
-  
-  Download [zip](https://github.com/EXTREMOPHILARUM/virus/releases/download/0.1/extension.zip)
-  
-</details>
+### Click [here](https://github.com/EXTREMOPHILARUM/virus/releases/download/0.1/extension.zip) if you dont want to work hard

